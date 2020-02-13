@@ -33,6 +33,10 @@
 
         public void colocarPeca(Peca p, Posicao pos)
         {
+            if (existePeca(pos))
+            {
+                throw new TabuleiroException("Ja existe uma peca nessa posicao");
+            }
             pecas[pos.Linha, pos.Coluna] = p;
             p.posicao = pos;
         }
