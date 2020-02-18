@@ -18,7 +18,7 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.tab);
+                        Tela.imprimirPartida(partida);
                         Console.WriteLine();
 
                         Console.WriteLine($"Turno {partida.turno}");
